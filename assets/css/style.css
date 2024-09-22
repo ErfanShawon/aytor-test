@@ -1,0 +1,231 @@
+:root {
+    --font-family: "Josefin Sans", sans-serif;
+    --second-family: "Roboto", sans-serif;
+	--text-color: #11161e;
+	--3d-primary-color: #151a32;
+	--comon-colot: #fff;
+	--1st-primary-color: #ff6f61;
+	--paragraph-color: #444;
+	--2nd-primary-color: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+	--a6aab7: #a6aab7;
+}
+/*Common css starts*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+ul,ol,li{
+    list-style: none;
+}
+/*Common css ends*/
+/*Nav bar starts*/
+nav.navbar{
+	padding: 20px 0;
+}
+nav.navbar ul li:hover span i{
+transform: rotate(180deg);
+transition: 0.3s;
+}
+nav.navbar #navbarCnt li{
+	margin: 0 22px;
+}
+nav.navbar #navbarCnt li a{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--text-color);
+transition: 0.3s;
+}
+nav.navbar #navbarCnt li:hover a{
+	color: var(--1st-primary-color);
+	transform: scale(1.1);
+}
+.icons ul li{
+	margin-top: 15px;
+}
+.icons ul li a{
+	margin: 0 10px;
+	color: #000;
+	font-size: 18px;
+}
+.cartZero{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 18px;
+	background-color: var(--1st-primary-color);
+	display: block;
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: var(--comon-colot);
+top: -2px;
+right: 3px;
+position: absolute;
+}
+
+.navBarSm .menuBar i{
+	margin: 0 10px;
+	color:var(--3d-primary-color);
+	font-size: 18px;
+
+}
+.navBarSm{
+	padding: 15px 0;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navBarSm .logo img{
+	width: 120px;
+}
+.navbarBottom{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0px -8px 20px rgba(0, 0, 0, 0.24);
+	padding: 15px 20px;
+	background-color: var(--bg);
+}
+.navbarBottom ul li a{
+	margin: 0 20px;
+	color:var(--3d-primary-color);
+	font-size: 20px;
+	font-weight: 500;
+}
+.navbarBottom ul li a:hover{
+	color: var(--1st-primary-color);
+	transition: 0.3s;
+}
+.navbarBottom .search{
+	color: var(--background-color);
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 50%;
+	display: block;
+	background-color: var(--2nd-primary-color);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -30px;
+	box-shadow: rgba(255, 86, 69, 0.50) 0px 8px 20px;
+}
+nav #navbarCnt .sub{
+	position: absolute;
+	top: 200px;
+	opacity: 0;
+	visibility: hidden;
+	background-color: transparent;
+	text-align: center;
+}
+nav #navbarCnt .sub li{
+	border: 2px solid var(--2nd-primary-color);
+	padding: 10px 20px;
+	display: block;
+	position: relative;
+	right: 20px;
+	
+}
+nav #navbarCnt ul .sub li a{
+	text-decoration: none;
+	display: block;
+}
+nav #navbarCnt li:hover .sub{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s;
+	top: 80px;
+	color: #f1f1f1;
+}
+.arrowSlide{
+	color: #f1f1f1;
+}
+/*Nav bar ends*/
+/*sideBar part starts*/
+#sideBar{
+	max-width: 80%;
+	transition: 0.5s;
+}
+#sideBar .offcanvas-header{
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#sideBar .offcanvas-body{
+margin-top: 20px;
+}
+#sideBar .offcanvas-body ul li{
+padding: 10px;
+margin-bottom: 10px;
+background-color: var(--1st-primary-color);
+color: var(--comon-colot);
+}
+#sideBar .offcanvas-body ul li i{
+	margin-right: 10px;
+}
+#sideBar .offcanvas-body ul li{
+	font-size: 18px;
+	font-weight: 500;
+}
+#sideBar .offcanvas-body ul li:hover{
+transform: scale(1.1);
+background-color: var(--3d-primary-color);
+}
+/*sideBar part ends*/
+/*Banner Part starts*/
+#banner .slides{
+width: 100%;
+height: 800px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+#banner .slides .banner-cnt h5{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #1d1d1d;
+
+}
+#banner .slides .banner-cnt h2{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+line-height: 116%;
+color: #1d1d1d;
+margin-top: 14px;
+}
+#banner .slides .banner-cnt p{
+	font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #1d1d1d;
+margin-top: 16px;
+}
+#banner .slides .banner-cnt a{
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 56px;
+text-align: center;
+color: var(--comon-colot);
+background: var(--1st-primary-color);
+width: 196px;
+height: 56px;
+display: block;
+text-align: center;
+margin-top: 29px;
+text-decoration: none;
+}
+/*Banner part ends*/
